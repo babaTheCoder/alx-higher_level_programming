@@ -1,0 +1,4 @@
+#!/bin/bash
+PYFILE="main.py"  # Change this to the name of your Python file
+
+python3 -m compileall -b "$PYFILE"
