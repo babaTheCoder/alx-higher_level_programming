@@ -5,7 +5,7 @@
 class Rectangle:
     """This is a rectangle class
     It allows the user to create new rectangle objects with custom dimensions
-    
+
     Attributes:
         width (int): the width of the rectangle
         height (int): the  height of the rectangle
@@ -104,6 +104,6 @@ class Rectangle:
 
     def __del__(self):
         """Runs when the rectangle is destroyed"""
-        
+
         print('Bye rectangle...')
         Rectangle.number_of_instances -= 1

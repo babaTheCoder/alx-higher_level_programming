@@ -100,5 +100,5 @@ class Rectangle:
 
     def __del__(self):
         """Runs when the rectangle is destroyed"""
-        
+
         print('Bye rectangle...')
