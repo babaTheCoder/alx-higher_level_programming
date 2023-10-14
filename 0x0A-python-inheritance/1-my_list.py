@@ -2,6 +2,7 @@
 
 """This module sorts a given list"""
 
+
 class MyList(list):
     """This class returns the elements of a list in a sorted order"""
 
@@ -13,7 +14,7 @@ class MyList(list):
         for i in range(n - 1):
             for j in range(n - 1 - i):
                 if new_lst[j] > new_lst[j + 1]:
-                    new_lst[j], new_lst[j + 1] =  new_lst[j + 1], new_lst[j]
+                    new_lst[j], new_lst[j + 1] = new_lst[j + 1], new_lst[j]
         return new_lst
 
     def print_sorted(self):
