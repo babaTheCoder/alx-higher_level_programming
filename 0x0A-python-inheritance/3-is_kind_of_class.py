@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module checks if an object is same kind as a given class"""
 
+
 def is_kind_of_class(obj, a_class):
     """Checks using issinstance
 
