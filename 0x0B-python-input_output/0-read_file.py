@@ -8,6 +8,9 @@ def read_file(filename=""):
 
     Args:
         filename (str): The name of the file to open
+
+    Returns:
+        nothing at all
     """
 
     with open(filename, encoding="utf-8") as currentfile:
