@@ -24,4 +24,4 @@ class Student:
         """Create a dictionary representation of Student instance"""
         if attrs is None:
             return self.__dict__
-        return {at: getattr(self, at) for at in attrs if hasattr(self, at))
+        return {at: getattr(self, at) for at in attrs if hasattr(self, at)}
