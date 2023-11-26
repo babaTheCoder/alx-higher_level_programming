@@ -1,0 +1,31 @@
+This file contains test for 0x07-python-test_driven_development/5-text_indentation.py
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Hello, are you friends?, or you're haters")
+Hello, are you friends?
+<BLANKLINE>
+, or you're haters
+
+
+
+>>> text_indentation(23)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/markkonlan/ALX/alx-higher_level_programming/0x07-python-test_driven_development/5-text_indentation.py", line 16, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string
+
+>>> text_indentation([])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/markkonlan/ALX/alx-higher_level_programming/0x07-python-test_driven_development/5-text_indentation.py", line 16, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/markkonlan/ALX/alx-higher_level_programming/0x07-python-test_driven_development/5-text_indentation.py", line 16, in text_indentation
+    raise TypeError("text must be a string")
+TypeError: text must be a string

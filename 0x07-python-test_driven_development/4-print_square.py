@@ -2,6 +2,7 @@
 
 """This module prints a square with # based off of a given size"""
 
+
 def print_square(size):
     """Prints a square with given size
 
