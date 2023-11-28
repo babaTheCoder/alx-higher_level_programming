@@ -55,11 +55,11 @@ class Rectangle:
     def __str__(self):
         """Defines a string"""
         if not isinstance(Rectangle.print_symbol, str):
-            Rectangle.print_symbol = str(Rectangle.print_symbol)
+            self.print_symbol = str(Rectangle.print_symbol)
 
         if self.__width == 0 or self.__height == 0:
             return ("")
-        row = f"{Rectangle.print_symbol}" * self.__width
+        row = f"{self.print_symbol}" * self.__width
 
         return f'{row}\n' * self.__height
 
