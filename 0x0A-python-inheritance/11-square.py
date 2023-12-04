@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-"""Module to write an empty class"""
+"""Module to write an empty class
+"""
 
 
 class BaseGeometry:
     """Geometry class
     """
     def area(self, width, height):
-        """check area"""
+        """
+        check area"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
@@ -24,13 +26,27 @@ class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
-
         BaseGeometry.integer_validator(self, "width", self.__width)
         BaseGeometry.integer_validator(self, "height", self.__height)
 
     def area(self):
-        """Calculates area of the Rectangle"""
+        """Method to calculate area of Rectangle
+        """
         return self.__width * self.__height
 
     def __str__(self):
-        return f"[Rectangle] {self.__width}/{self.__height}"
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+
+
+class Square(Rectangle):
+    """inherits from Rectangle
+    """
+    def __init__(self, size):
+        width = size
+        height = size
+        BaseGeometry.integer_validator(self, "size", size)
+        super().__init__(width, height)
+        self.__size = size
+
+    def __str__(self):
+        return f"[Square] {self.__size}/{self.__size}"
