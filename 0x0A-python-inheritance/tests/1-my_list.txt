@@ -1,0 +1,8 @@
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> print(my_list)
+[1]
+>>> my_list.append("hello")
+>>> print(my_list)
+[1, 'hello']
