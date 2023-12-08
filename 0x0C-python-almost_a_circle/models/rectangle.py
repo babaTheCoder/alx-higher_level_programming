@@ -81,3 +81,8 @@ class Rectangle(Base):
         rows = "#" * self.__width
         for i in range(self.__height):
             print(f"{rows}")
+
+    def __str__(self):
+        """Defines how an instance is displayed"""
+        return "[Rectangle] ({}) {}/{} -  {}/{}".format(
+                self.id, self.__x, self.__y, self.__width, self.__height)
