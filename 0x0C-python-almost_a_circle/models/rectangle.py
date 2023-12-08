@@ -78,9 +78,12 @@ class Rectangle(Base):
 
     def display(self):
         """Prints out the rectangle object with '#'"""
+        empt_space = " " * self.__x
         rows = "#" * self.__width
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
-            print(f"{rows}")
+            print(f"{empt_space}{rows}")
 
     def __str__(self):
         """Defines how an instance is displayed"""
