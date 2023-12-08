@@ -102,3 +102,6 @@ class Rectangle(Base):
                 if i < 5:
                     setattr(self, attbt[i], arg)
                     i += 1
+        elif (kwargs is not None):
+            for key, value in kwargs.items():
+                setattr(self, key, value)
